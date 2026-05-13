@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MegaPack Anime - Tráfico Frío</title>
+    <title>MegaPack Anime - TrÃ¡fico FrÃ­o</title>
 
     <!-- PRECARGA RECURSOS CRITICOS -->
     <link rel="preload" as="image"
@@ -32,122 +32,1837 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Space+Grotesk:wght@700;800&display=swap"
         rel="stylesheet">
     <!-- AOS para animaciones de scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        grotesk: ['Space Grotesk', 'sans-serif'],
-                    },
-                    colors: {
-                        darkBg: '#0f0514',
-                        darkCard: '#1a0d23',
-                        neonPink: '#e8308c',
-                        neonCyan: '#00f0ff',
-                        goldRef: '#ffc61a',
-                        softPurple: '#a78bfa'
-                    },
-                }
-            }
-        }
-    </script>
-
+    <!-- Estilos de Tailwind Compilados -->
     <style>
-        body {
-            background-color: #0f0514;
-            color: #f3e8f8;
-            overflow-x: hidden;
-        }
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
 
-        .bg-cyber {
-            background-image: radial-gradient(circle at 10% 20%, rgba(29, 15, 36, 1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(33, 18, 26, 1) 0%, transparent 40%),
-                linear-gradient(to bottom, #0f0514, #14081c);
-        }
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
 
-        .text-gradient {
-            background: linear-gradient(to right, #00f0ff, #e8308c, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
+/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*/
 
-        .text-gradient-pink {
-            background: linear-gradient(to right, #e8308c, #ff71b6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
 
-        .neon-shadow {
-            box-shadow: 0 0 40px rgba(232, 48, 140, 0.4);
-        }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
 
-        .neon-shadow-cyan {
-            box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
-        }
+::before,
+::after {
+  --tw-content: '';
+}
 
-        .pulse-btn {
-            animation: pulseGlow 2s infinite ease-in-out;
-        }
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
 
-        @keyframes pulseGlow {
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: Inter, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
 
-            0%,
-            100% {
-                box-shadow: 0 0 20px rgba(232, 48, 140, 0.4);
-                transform: scale(1);
-            }
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
 
-            50% {
-                box-shadow: 0 0 50px rgba(232, 48, 140, 0.8);
-                transform: scale(1.02);
-            }
-        }
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
 
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            opacity: 0;
-        }
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
 
-        .faq-item.active .faq-answer {
-            max-height: 400px;
-            opacity: 1;
-            padding-bottom: 1.25rem;
-        }
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
 
-        .faq-item.active .faq-icon {
-            transform: rotate(180deg);
-            color: #e8308c;
-        }
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
 
-        @keyframes emojiBounce {
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
 
-            0%,
-            100% {
-                transform: translateY(0) scale(1);
-            }
+/*
+Remove the default font size and weight for headings.
+*/
 
-            50% {
-                transform: translateY(-3px) scale(1.1);
-            }
-        }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
-        .emoji-animate {
-            display: inline-block;
-            animation: emojiBounce 2s ease-in-out infinite;
-        }
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+body {
+  background-color: #0f0514;
+  color: #f3e8f8;
+  overflow-x: hidden;
+}
+
+.bg-cyber {
+  background-image: radial-gradient(circle at 10% 20%, rgba(29, 15, 36, 1) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(33, 18, 26, 1) 0%, transparent 40%),
+      linear-gradient(to bottom, #0f0514, #14081c);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #00f0ff, #e8308c, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(to right, #e8308c, #ff71b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.neon-shadow {
+  box-shadow: 0 0 40px rgba(232, 48, 140, 0.4);
+}
+
+.neon-shadow-cyan {
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.pulse-btn {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 400px;
+  opacity: 1;
+  padding-bottom: 1.25rem;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+  color: #e8308c;
+}
+
+.emoji-animate {
+  display: inline-block;
+  animation: emojiBounce 2s ease-in-out infinite;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.aspect-\[4\/5\] {
+  aspect-ratio: 4/5;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-neonCyan {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 240 255 / var(--tw-border-opacity, 1));
+}
+
+.border-neonCyan\/20 {
+  border-color: rgb(0 240 255 / 0.2);
+}
+
+.border-neonCyan\/30 {
+  border-color: rgb(0 240 255 / 0.3);
+}
+
+.border-neonCyan\/40 {
+  border-color: rgb(0 240 255 / 0.4);
+}
+
+.border-neonCyan\/50 {
+  border-color: rgb(0 240 255 / 0.5);
+}
+
+.border-neonPink {
+  --tw-border-opacity: 1;
+  border-color: rgb(232 48 140 / var(--tw-border-opacity, 1));
+}
+
+.border-neonPink\/20 {
+  border-color: rgb(232 48 140 / 0.2);
+}
+
+.border-neonPink\/30 {
+  border-color: rgb(232 48 140 / 0.3);
+}
+
+.border-neonPink\/40 {
+  border-color: rgb(232 48 140 / 0.4);
+}
+
+.border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.border-white\/5 {
+  border-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black\/60 {
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.bg-black\/70 {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.bg-black\/80 {
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+.bg-darkBg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 5 20 / var(--tw-bg-opacity, 1));
+}
+
+.bg-darkCard {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 13 35 / var(--tw-bg-opacity, 1));
+}
+
+.bg-neonCyan {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 240 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-neonCyan\/10 {
+  background-color: rgb(0 240 255 / 0.1);
+}
+
+.bg-neonCyan\/20 {
+  background-color: rgb(0 240 255 / 0.2);
+}
+
+.bg-neonCyan\/5 {
+  background-color: rgb(0 240 255 / 0.05);
+}
+
+.bg-neonPink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.bg-neonPink\/20 {
+  background-color: rgb(232 48 140 / 0.2);
+}
+
+.bg-purple-500\/20 {
+  background-color: rgb(168 85 247 / 0.2);
+}
+
+.bg-red-500\/10 {
+  background-color: rgb(239 68 68 / 0.1);
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-neonCyan {
+  --tw-gradient-from: #00f0ff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 240 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-neonPink {
+  --tw-gradient-from: #e8308c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(232 48 140 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange-500 {
+  --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-500 {
+  --tw-gradient-from: #ef4444 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(239 68 68 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-600 {
+  --tw-gradient-from: #dc2626 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(220 38 38 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-softPurple {
+  --tw-gradient-from: #a78bfa var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(167 139 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-red-500 {
+  --tw-gradient-to: rgb(239 68 68 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #ef4444 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+
+.to-neonPink {
+  --tw-gradient-to: #e8308c var(--tw-gradient-to-position);
+}
+
+.to-purple-600 {
+  --tw-gradient-to: #9333ea var(--tw-gradient-to-position);
+}
+
+.to-red-500 {
+  --tw-gradient-to: #ef4444 var(--tw-gradient-to-position);
+}
+
+.to-red-600 {
+  --tw-gradient-to: #dc2626 var(--tw-gradient-to-position);
+}
+
+.to-yellow-500 {
+  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-grotesk {
+  font-family: Space Grotesk, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tabular-nums {
+  --tw-numeric-spacing: tabular-nums;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.text-goldRef {
+  --tw-text-opacity: 1;
+  color: rgb(255 198 26 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
+
+.text-neonCyan {
+  --tw-text-opacity: 1;
+  color: rgb(0 240 255 / var(--tw-text-opacity, 1));
+}
+
+.text-neonPink {
+  --tw-text-opacity: 1;
+  color: rgb(232 48 140 / var(--tw-text-opacity, 1));
+}
+
+.text-purple-400 {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
+.decoration-neonPink {
+  text-decoration-color: #e8308c;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.shadow-\[0_0_15px_rgba\(0\2c 240\2c 255\2c 0\.2\)\] {
+  --tw-shadow: 0 0 15px rgba(0,240,255,0.2);
+  --tw-shadow-colored: 0 0 15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_0_50px_rgba\(232\2c 48\2c 140\2c 0\.15\)\] {
+  --tw-shadow: 0 0 50px rgba(232,48,140,0.15);
+  --tw-shadow-colored: 0 0 50px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_10px_20px_rgba\(232\2c 48\2c 140\2c 0\.3\)\] {
+  --tw-shadow: 0 10px 20px rgba(232,48,140,0.3);
+  --tw-shadow-colored: 0 10px 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_4px_15px_rgba\(239\2c 68\2c 68\2c 0\.5\)\] {
+  --tw-shadow: 0 4px 15px rgba(239,68,68,0.5);
+  --tw-shadow-colored: 0 4px 15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black\/50 {
+  --tw-shadow-color: rgb(0 0 0 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.blur-\[120px\] {
+  --tw-blur: blur(120px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur {
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pulseGlow {
+  0%,
+    100% {
+    box-shadow: 0 0 20px rgba(232, 48, 140, 0.4);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 50px rgba(232, 48, 140, 0.8);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes emojiBounce {
+  0%,
+    100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-3px) scale(1.1);
+  }
+}
+
+.selection\:bg-neonPink *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:bg-neonPink *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:text-white *::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.selection\:text-white *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.selection\:bg-neonPink::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:bg-neonPink::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.selection\:text-white::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.selection\:text-white::selection {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:border-red-500\/50:hover {
+  border-color: rgb(239 68 68 / 0.5);
+}
+
+.hover\:border-softPurple\/50:hover {
+  border-color: rgb(167 139 250 / 0.5);
+}
+
+.hover\:border-white\/20:hover {
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:bg-neonPink:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 48 140 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-pink-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:from-pink-500:hover {
+  --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-purple-500:hover {
+  --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+}
+
+.hover\:text-neonPink:hover {
+  --tw-text-opacity: 1;
+  color: rgb(232 48 140 / var(--tw-text-opacity, 1));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.hover\:shadow-\[0_15px_30px_rgba\(232\2c 48\2c 140\2c 0\.5\)\]:hover {
+  --tw-shadow: 0 15px 30px rgba(232,48,140,0.5);
+  --tw-shadow-colored: 0 15px 30px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
     </style>
 </head>
 
@@ -156,34 +1871,34 @@
     <!-- BANNER DE URGENCIA TOP -->
     <div
         class="w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-center py-2 px-4 shadow-[0_4px_15px_rgba(239,68,68,0.5)] z-50 sticky top-0 flex items-center justify-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest">
-        <span class="animate-pulse">⚠️</span> ALERTA: EL DESCUENTO Y LOS BONOS DESAPARECEN PRONTO <span
-            class="animate-pulse">⚠️</span>
+        <span class="animate-pulse">âš ï¸</span> ALERTA: EL DESCUENTO Y LOS BONOS DESAPARECEN PRONTO <span
+            class="animate-pulse">âš ï¸</span>
     </div>
 
-    <!-- SECCIÓN 1: GANCHO / HERO (ATENCIÓN INTENSA, SIN BOTÓN DE COMPRA) -->
+    <!-- SECCIÃ“N 1: GANCHO / HERO (ATENCIÃ“N INTENSA, SIN BOTÃ“N DE COMPRA) -->
     <header class="relative pt-12 pb-20 px-4">
         <div class="max-w-4xl mx-auto text-center z-10 relative">
 
             <div data-aos="fade-down" class="mb-4 inline-block">
                 <span
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold bg-darkCard border border-neonCyan/30 text-neonCyan shadow-[0_0_15px_rgba(0,240,255,0.2)] uppercase tracking-widest">
-                    <span class="animate-pulse">🟢</span> Atención: Sublimación & Estampados
+                    <span class="animate-pulse">ðŸŸ¢</span> AtenciÃ³n: SublimaciÃ³n & Estampados
                 </span>
             </div>
 
             <h1 data-aos="zoom-in" data-aos-delay="100"
                 class="font-grotesk text-4xl md:text-6xl font-black leading-tight mb-6">
-                Lanza Tu Próxima Colección <br class="hidden md:block" />
-                <span class="text-gradient">Best-Seller De Anime</span> Hoy Mismo...
+                Lanza Tu PrÃ³xima ColecciÃ³n <br class="hidden md:block" />
+                <span class="text-gradient">MÃS VENDIDA De Anime</span> Hoy Mismo...
             </h1>
 
             <p data-aos="fade-up" data-aos-delay="200"
                 class="text-lg md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto font-medium">
                 Sin frustrarte buscando vectores feos, sin sufrir con fondos blancos imposibles de recortar, y <strong
-                    class="text-white">sin tirar meses de trabajo ni miles de dólares probando herramientas.</strong>
+                    class="text-white">sin tirar meses de trabajo ni miles de dÃ³lares probando herramientas.</strong>
             </p>
 
-            <!-- Video Hero de Demostración Emocional -->
+            <!-- Video Hero de DemostraciÃ³n Emocional -->
             <div data-aos="fade-up" data-aos-delay="300"
                 class="relative max-w-2xl mx-auto rounded-2xl overflow-hidden border-2 border-neonPink/40 bg-darkCard neon-shadow aspect-video">
                 <!-- Marca de agua / Badge -->
@@ -194,21 +1909,20 @@
                     Calidad Real
                 </div>
 
-                <video autoplay loop muted playsinline
+                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
                     class="w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity">
-                    <source src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a6a4e39.17920112_Camiseta.mp4"
-                        type="video/mp4">
+                    <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq">
                 </video>
             </div>
 
             <p data-aos="fade-up" data-aos-delay="400"
                 class="mt-8 text-sm md:text-base text-gray-500 italic max-w-xl mx-auto">
-                "Este es el mismo catálogo visual que las grandes tiendas de merch a nivel mundial están usando en
+                "Este es el mismo catÃ¡logo visual que las grandes tiendas de merch a nivel mundial estÃ¡n usando en
                 secreto para bombardear el mercado."
             </p>
 
             <div class="mt-8 text-white animate-bounce">
-                <p class="text-sm uppercase tracking-widest font-bold text-gray-500 mb-2">Desliza para ver más</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500 mb-2">Desliza para ver mÃ¡s</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="mx-auto lucide lucide-chevron-down">
@@ -218,11 +1932,11 @@
         </div>
     </header>
 
-    <!-- SECCIÓN 2: AGITACIÓN DEL PROBLEMA -->
+    <!-- SECCIÃ“N 2: AGITACIÃ“N DEL PROBLEMA -->
     <section class="py-20 px-4 bg-darkBg border-y border-neonPink/20">
         <div class="max-w-4xl mx-auto">
             <div data-aos="fade-up" class="text-center mb-12">
-                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseños
+                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseÃ±os
                     brutales <br class="hidden md:block" /> <span class="text-red-500">que vendan.</span></h2>
             </div>
 
@@ -230,45 +1944,45 @@
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">⏳</span>
+                        <span class="text-2xl">â³</span>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Pierdes Horas Editando</h3>
-                    <p class="text-gray-400 text-sm">Descargas imágenes "gratuitas" que vienen con fondos horribles.
+                    <p class="text-gray-400 text-sm">Descargas imÃ¡genes "gratuitas" que vienen con fondos horribles.
                         Pasas horas borrando fondos y el resultado siempre se ve poco profesional en la prenda.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">💸</span>
+                        <span class="text-2xl">ðŸ’¸</span>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Costos Asfixiantes</h3>
-                    <p class="text-gray-400 text-sm">Contratas diseñadores en Fiverr o Upwork, te cobran $15 o $20
-                        dólares por UN SOLO DISEÑO y tardan días en entregar. Tu margen de ganancia desaparece.</p>
+                    <p class="text-gray-400 text-sm">Contratas diseÃ±adores en Fiverr o Upwork, te cobran $15 o $20
+                        dÃ³lares por UN SOLO DISEÃ‘O y tardan dÃ­as en entregar. Tu margen de ganancia desaparece.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">📉</span>
+                        <span class="text-2xl">ðŸ“‰</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas Atrás</h3>
-                    <p class="text-gray-400 text-sm">Mientras tú estás varado buscando el diseño perfecto bajado de
-                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se está llevando a tus
+                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas AtrÃ¡s</h3>
+                    <p class="text-gray-400 text-sm">Mientras tÃº estÃ¡s varado buscando el diseÃ±o perfecto bajado de
+                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se estÃ¡ llevando a tus
                         clientes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN 3: LA REVELACIÓN (SOLUCIÓN) Y CARRUSEL -->
+    <!-- SECCIÃ“N 3: LA REVELACIÃ“N (SOLUCIÃ“N) Y CARRUSEL -->
     <section class="py-24 px-4 bg-cyber">
         <div class="max-w-5xl mx-auto">
             <div data-aos="zoom-in" class="text-center mb-16">
                 <span
                     class="inline-block px-4 py-1.5 rounded-full text-xs font-bold bg-neonCyan/20 border border-neonCyan text-neonCyan mb-4 uppercase tracking-widest"><span
-                        class="animate-pulse">✨</span> El Atajo Definitivo</span>
+                        class="animate-pulse">âœ¨</span> El Atajo Definitivo</span>
                 <h2 class="font-grotesk text-4xl md:text-5xl font-black mb-6">El <span class="text-gradient">MegaPack
                         Anime +45,000</span> Para Sublimadores</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Más de 45,000 diseños de Anime en alta definición,
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">MÃ¡s de 45,000 diseÃ±os de Anime en alta definiciÃ³n,
                     procesados, curados y <strong
                         class="text-white underline decoration-neonPink drop-shadow-md decoration-4 underline-offset-4">LISTOS
                         PARA VENDER Y LISTOS PARA SUBLIMAR.</strong></p>
@@ -278,22 +1992,22 @@
             <div data-aos="fade-up"
                 class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden border border-neonPink/30 bg-darkCard shadow-[0_0_50px_rgba(232,48,140,0.15)] p-2">
                 <div id="modern-carousel" class="relative aspect-square rounded-2xl overflow-hidden bg-black">
-                    <!-- Imágenes -->
+                    <!-- ImÃ¡genes -->
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-100 z-10"
-                        alt="Diseño 1">
+                        alt="DiseÃ±o 1">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="Diseño 2" loading="lazy">
+                        alt="DiseÃ±o 2" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="Diseño 3" loading="lazy">
+                        alt="DiseÃ±o 3" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="Diseño 4" loading="lazy">
+                        alt="DiseÃ±o 4" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="Diseño 5" loading="lazy">
+                        alt="DiseÃ±o 5" loading="lazy">
 
                     <!-- Controles -->
                     <button onclick="moveCarousel(-1)"
@@ -322,7 +2036,7 @@
             </div>
 
             <p class="text-center mt-6 text-sm text-gray-500 italic">+45,000 recursos en calidad de estudio.
-                Sublimación, DTF, Serigrafía o Vinilo.</p>
+                SublimaciÃ³n, DTF, SerigrafÃ­a o Vinilo.</p>
         </div>
     </section>
 
@@ -344,8 +2058,8 @@
 
                 <video autoplay loop muted playsinline
                     class="w-full h-full object-cover relative z-10 transition-transform duration-700 hover:scale-105">
-                    <source src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cada5a508007.88337617_Baki.mp4"
-                        type="video/mp4">
+                    <source
+                        src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1777496850/Baki_2mod_abhuia">
                 </video>
             </div>
 
@@ -359,12 +2073,12 @@
                     <span class="text-neonCyan">Listos Para Vender.</span>
                 </h2>
                 <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                    El mayor dolor de cabeza del sublimador moderno es encontrar diseños ganadores que no salgan
-                    pixelados al momento de pasarlos por la plancha térmica o DTF.
+                    El mayor dolor de cabeza del sublimador moderno es encontrar diseÃ±os ganadores que no salgan
+                    pixelados al momento de pasarlos por la plancha tÃ©rmica o DTF.
                 </p>
                 <p class="text-lg text-gray-300 mb-8 leading-relaxed">
                     Con este archivo masivo de <strong
-                        class="text-white text-xl border-b-2 border-neonPink pb-1">+45,000 imágenes HD</strong>, las
+                        class="text-white text-xl border-b-2 border-neonPink pb-1">+45,000 imÃ¡genes HD</strong>, las
                     horas desperdiciadas buscando vectores terminan hoy. Simplemente descargas a tu PC, mandas a
                     imprimir, planchas sobre el producto, empacas y <strong
                         class="text-neonPink uppercase tracking-widest font-bold">empiezas a facturar</strong>.
@@ -374,17 +2088,17 @@
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-neonCyan/20 flex items-center justify-center text-neonCyan font-bold text-lg">
-                            ✓</div>
+                            âœ“</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Colores que estallan</p>
-                            <p class="text-sm text-gray-400">Garantía de máxima transferencia de tinta en sublimación.
+                            <p class="text-sm text-gray-400">GarantÃ­a de mÃ¡xima transferencia de tinta en sublimaciÃ³n.
                             </p>
                         </div>
                     </li>
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-neonPink/20 flex items-center justify-center text-neonPink font-bold text-lg">
-                            ✓</div>
+                            âœ“</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Cero recortes (Sin Fondos)</p>
                             <p class="text-sm text-gray-400">Formato PNG Transparente puro. No lidias con bordes
@@ -394,7 +2108,7 @@
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-lg">
-                            ✓</div>
+                            âœ“</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Universales</p>
                             <p class="text-sm text-gray-400">Compatibles 100% con Illustrator, Photoshop, Corel o
@@ -406,77 +2120,77 @@
         </div>
     </section>
 
-    <!-- SECCIÓN EMOJIS ANIMADOS (CARACTERÍSTICAS) -->
+    <!-- SECCIÃ“N EMOJIS ANIMADOS (CARACTERÃSTICAS) -->
     <section class="py-16 px-4 bg-cyber">
         <div class="max-w-3xl mx-auto">
             <p data-aos="fade-up"
                 class="text-lg md:text-2xl text-center text-gray-300 font-bold mb-10 max-w-2xl mx-auto">
-                La colección definitiva para impresión a pedido, camisetas, sudaderas y mercancía.
+                La colecciÃ³n definitiva para impresiÃ³n a pedido, camisetas, sudaderas y mercancÃ­a.
                 <strong class="text-neonPink">Uso comercial incluido.</strong>
             </p>
 
             <div class="space-y-4 text-left max-w-xl mx-auto">
                 <div data-aos="fade-up" data-aos-delay="50"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🎨</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸŽ¨</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimación,
-                            DTF, vinilo, serigrafía y más</p>
-                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER técnica de impresión, sin importar
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimaciÃ³n,
+                            DTF, vinilo, serigrafÃ­a y mÃ¡s</p>
+                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER tÃ©cnica de impresiÃ³n, sin importar
                             tu equipo.</p>
                     </div>
                 </div>
-                <!-- Característica 2 -->
+                <!-- CaracterÃ­stica 2 -->
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">💎</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ’Ž</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resolución real — sin
-                            píxeles, sin bordes cortados</p>
-                        <p class="text-sm text-gray-400 mt-1">Cada imagen está preparada para impresión profesional.
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resoluciÃ³n real â€” sin
+                            pÃ­xeles, sin bordes cortados</p>
+                        <p class="text-sm text-gray-400 mt-1">Cada imagen estÃ¡ preparada para impresiÃ³n profesional.
                             Calidad que se nota.</p>
                     </div>
                 </div>
-                <!-- Característica 3 -->
+                <!-- CaracterÃ­stica 3 -->
                 <div data-aos="fade-up" data-aos-delay="150"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">⚡</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">âš¡</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo —
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo â€”
                             sin editar, sin perder tiempo</p>
                         <p class="text-sm text-gray-400 mt-1">+45,000 archivos con fondo transparente. Descarga y
                             empieza a vender.</p>
                     </div>
                 </div>
-                <!-- Característica 4 -->
+                <!-- CaracterÃ­stica 4 -->
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">👕</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ‘•</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Ideal para camisetas, tazas,
                             termos, mochilas, fundas y lo que imagines</p>
-                        <p class="text-sm text-gray-400 mt-1">Diseños versátiles que se adaptan a cualquier producto y
+                        <p class="text-sm text-gray-400 mt-1">DiseÃ±os versÃ¡tiles que se adaptan a cualquier producto y
                             nicho.</p>
                     </div>
                 </div>
-                <!-- Característica 5 -->
+                <!-- CaracterÃ­stica 5 -->
                 <div data-aos="fade-up" data-aos-delay="250"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🕐</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ•</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Ahorra 500+ horas de trabajo
                             con +45,000 personajes organizados</p>
                         <p class="text-sm text-gray-400 mt-1">Todo clasificado, todo al alcance. Directo al grano.</p>
                     </div>
                 </div>
-                <!-- Característica 6 -->
+                <!-- CaracterÃ­stica 6 -->
                 <div data-aos="fade-up" data-aos-delay="300"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🛠️</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ› ï¸</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Formatos editables incluidos
-                            — PNG, PSD, PDF, AI y más</p>
-                        <p class="text-sm text-gray-400 mt-1">Máxima flexibilidad para personalizar cada diseño a tu
+                            â€” PNG, PSD, PDF, AI y mÃ¡s</p>
+                        <p class="text-sm text-gray-400 mt-1">MÃ¡xima flexibilidad para personalizar cada diseÃ±o a tu
                             gusto.</p>
                     </div>
                 </div>
@@ -484,7 +2198,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 4: PRUEBA SOCIAL -->
+    <!-- SECCIÃ“N 4: PRUEBA SOCIAL -->
     <section class="py-20 px-4 bg-darkBg border-y border-white/5">
         <div class="max-w-5xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-center">
@@ -501,7 +2215,7 @@
                 <div data-aos="fade-up" data-aos-delay="200">
                     <div class="text-4xl md:text-5xl font-black text-white mb-2"><span class="count-up"
                             data-to="4.9">0.0</span>/5</div>
-                    <div class="text-neonPink font-bold text-sm uppercase tracking-wide">Calificación</div>
+                    <div class="text-neonPink font-bold text-sm uppercase tracking-wide">CalificaciÃ³n</div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300">
                     <div class="text-4xl md:text-5xl font-black text-white mb-2"><span class="count-up"
@@ -511,15 +2225,15 @@
             </div>
 
             <h2 data-aos="fade-up" class="font-grotesk text-3xl font-bold text-center mb-10"><span
-                    class="text-2xl">💬</span> Lo que dicen quienes ya están facturando</h2>
+                    class="text-2xl">ðŸ’¬</span> Lo que dicen quienes ya estÃ¡n facturando</h2>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Testimonio 1 -->
                 <div data-aos="fade-up"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Abrí mi tienda en Etsy y en la primera semana
-                        ya había vendido 12 camisetas. Estos diseños ahorran horas de Photoshop porque los recortes son
+                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"AbrÃ­ mi tienda en Etsy y en la primera semana
+                        ya habÃ­a vendido 12 camisetas. Estos diseÃ±os ahorran horas de Photoshop porque los recortes son
                         perfectos."</p>
                     <div class="flex items-center gap-3">
                         <div
@@ -534,8 +2248,8 @@
                 <!-- Testimonio 2 -->
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Soy diseñadora freelance y este pack me ha
+                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Soy diseÃ±adora freelance y este pack me ha
                         dado recursos para meses de proyectos. Mis clientes quedan fascinados con la calidad."</p>
                     <div class="flex items-center gap-3">
                         <div
@@ -550,16 +2264,16 @@
                 <!-- Testimonio 3 -->
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"45,000 imágenes por ese precio es una locura.
-                        Literalmente recuperé lo invertido con la primera taza de anime que vendí. Brutal."</p>
+                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"45,000 imÃ¡genes por ese precio es una locura.
+                        Literalmente recuperÃ© lo invertido con la primera taza de anime que vendÃ­. Brutal."</p>
                     <div class="flex items-center gap-3">
                         <div
                             class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center font-bold text-white">
                             A</div>
                         <div>
-                            <p class="text-white font-bold text-sm">Andrés P.</p>
-                            <p class="text-xs text-gray-500">Dueño de E-Commerce</p>
+                            <p class="text-white font-bold text-sm">AndrÃ©s P.</p>
+                            <p class="text-xs text-gray-500">DueÃ±o de E-Commerce</p>
                         </div>
                     </div>
                 </div>
@@ -567,7 +2281,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 5: VALUE STACK Y OFERTA (PRIMER BOTÓN DE COMPRA) -->
+    <!-- SECCIÃ“N 5: VALUE STACK Y OFERTA (PRIMER BOTÃ“N DE COMPRA) -->
     <section class="py-24 px-4 bg-cyber">
         <div class="max-w-3xl mx-auto">
             <div data-aos="zoom-in"
@@ -575,22 +2289,22 @@
                 <!-- Cinta de urgencia superior -->
                 <div
                     class="absolute top-0 left-0 w-full bg-neonPink text-white text-center py-1.5 text-xs md:text-sm font-black tracking-widest uppercase animate-pulse">
-                    🚨 Oferta Relámpago - Se acaba pronto 🚨
+                    ðŸš¨ Oferta RelÃ¡mpago - Se acaba pronto ðŸš¨
                 </div>
 
                 <div class="text-center mt-6">
                     <h2 class="font-grotesk text-3xl md:text-4xl font-bold mb-8">Lo Que Te Llevas Hoy:</h2>
 
                     <ul class="text-left space-y-4 mb-8 max-w-sm mx-auto">
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
                             +45,000 Vectores y PNGs de Anime</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
-                            Fondos Transparentes (Cero Edición)</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
+                            Fondos Transparentes (Cero EdiciÃ³n)</li>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
                             Licencia Comercial (Totalmente Legal)</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
                             Acceso Inmediato en Google Drive</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
                             Actualizaciones Futuras Gratis</li>
                     </ul>
 
@@ -605,14 +2319,14 @@
                         <p class="text-6xl md:text-8xl font-black text-white flex justify-center items-start">
                             <span class="text-3xl md:text-5xl mt-2 mr-1 text-neonPink">$</span>4.95
                         </p>
-                        <p class="text-neonPink font-bold mt-2">DÓLARES AMERICANOS - PAGO ÚNICO</p>
+                        <p class="text-neonPink font-bold mt-2">DÃ“LARES AMERICANOS - PAGO ÃšNICO</p>
                     </div>
 
                     <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank"
                         rel="noopener noreferrer" class="block w-full">
                         <button
                             class="pulse-btn w-full py-5 md:py-6 rounded-xl bg-gradient-to-r from-neonPink to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-xl md:text-2xl transition-all shadow-[0_10px_20px_rgba(232,48,140,0.3)] hover:shadow-[0_15px_30px_rgba(232,48,140,0.5)] transform hover:-translate-y-1">
-                            ¡SÍ! QUIERO DESCARGAR TODO AHORA
+                            Â¡SÃ! QUIERO DESCARGAR TODO AHORA
                         </button>
                     </a>
 
@@ -635,18 +2349,18 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 6: DESTRUCCIÓN DE OBJECIONES (FAQ) -->
+    <!-- SECCIÃ“N 6: DESTRUCCIÃ“N DE OBJECIONES (FAQ) -->
     <section class="py-20 px-4 bg-darkBg border-t border-white/5">
         <div class="max-w-3xl mx-auto">
             <h2 data-aos="fade-up" class="font-grotesk text-3xl md:text-4xl font-bold text-center mb-12">Respuestas
-                Rápidas a Dudas Frecuentes</h2>
+                RÃ¡pidas a Dudas Frecuentes</h2>
 
             <div data-aos="fade-up" class="space-y-4">
                 <!-- FAQ 1 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        ¿Puedo usar estas imágenes para VENDER productos físicos?
+                        Â¿Puedo usar estas imÃ¡genes para VENDER productos fÃ­sicos?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -654,15 +2368,15 @@
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        Sí, 100%. Tu compra incluye una Licencia de Uso Comercial. Puedes usarlas en camisetas, tazas,
-                        posters, fundas o cualquier producto que vendas en Shopify, Etsy, Amazon Merch o físicamente.
+                        SÃ­, 100%. Tu compra incluye una Licencia de Uso Comercial. Puedes usarlas en camisetas, tazas,
+                        posters, fundas o cualquier producto que vendas en Shopify, Etsy, Amazon Merch o fÃ­sicamente.
                     </div>
                 </div>
                 <!-- FAQ 2 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        ¿Funcionan para tazas, mousepads o solo ropa?
+                        Â¿Funcionan para tazas, mousepads o solo ropa?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -670,8 +2384,8 @@
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        Totalmente versátiles. Al ser calidad Ultra HD, puedes redimensionarlos para imprimir en tazas,
-                        gorras, case de celulares, pósters, mousepads, tapetes, o prendas grandes como sudaderas sin
+                        Totalmente versÃ¡tiles. Al ser calidad Ultra HD, puedes redimensionarlos para imprimir en tazas,
+                        gorras, case de celulares, pÃ³sters, mousepads, tapetes, o prendas grandes como sudaderas sin
                         perder absolutamente nada de nitidez.
                     </div>
                 </div>
@@ -679,7 +2393,7 @@
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        ¿Tienen marcas de agua o fondo blanco?
+                        Â¿Tienen marcas de agua o fondo blanco?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -696,7 +2410,7 @@
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        ¿Se borran o tengo un tiempo límite para descargarlos?
+                        Â¿Se borran o tengo un tiempo lÃ­mite para descargarlos?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -706,14 +2420,14 @@
                     <div class="faq-answer px-5 text-gray-400 text-sm">
                         No se borran NUNCA. Tu acceso a nuestro Drive es VIP y de por vida. No necesitas descargar los
                         30 GB de golpe; puedes entrar cada vez que tengas un pedido y bajar solo la imagen que vas a
-                        sublimar ese día.
+                        sublimar ese dÃ­a.
                     </div>
                 </div>
                 <!-- FAQ 5 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        ¿Tengo que instalar algún programa o hacer pago mensual?
+                        Â¿Tengo que instalar algÃºn programa o hacer pago mensual?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -721,7 +2435,7 @@
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        NO. Es un <strong>Pago Único sin suscripciones ocultas</strong>. Y no necesitas instalar nada
+                        NO. Es un <strong>Pago Ãšnico sin suscripciones ocultas</strong>. Y no necesitas instalar nada
                         raro, accedes desde cualquier navegador mediante un link seguro de Google Drive enviado a tu
                         correo en cuanto Hotmart confirma el pago (normalmente tarda 30 segundos).
                     </div>
@@ -730,7 +2444,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 7: URGENCIA FINAL Y FOOTER -->
+    <!-- SECCIÃ“N 7: URGENCIA FINAL Y FOOTER -->
     <section class="py-16 px-4 bg-black border-t border-neonPink/30 relative overflow-hidden">
         <div class="max-w-2xl mx-auto text-center relative z-10">
             <h2 class="text-3xl font-bold mb-4">Esta Oferta Desaparece En:</h2>
@@ -749,12 +2463,12 @@
     </section>
 
     <footer class="bg-black py-8 text-center text-xs text-gray-600 border-t border-white/5">
-        <p>© 2026 MegaPack Anime (+45,000 Diseños) — Todos los derechos reservados.</p>
+        <p>Â© 2026 MegaPack Anime (+45,000 DiseÃ±os) â€” Todos los derechos reservados.</p>
         <p class="mt-2 max-w-lg mx-auto">This site is not a part of the Facebook website or Facebook Inc. Additionally,
             This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
     </footer>
 
-    <!-- LÓGICA DEL CARRUSEL (No bloqueante) -->
+    <!-- LÃ“GICA DEL CARRUSEL (No bloqueante) -->
     <script>
         let slideIndex = 0;
         let slideInterval;
@@ -786,7 +2500,7 @@
         // Iniciar
         if (cSlides.length > 0) startAutoCarousel();
 
-        // Parámetro src a Hotmart
+        // ParÃ¡metro src a Hotmart
         const urlParams = new URLSearchParams(window.location.search);
         const srcParam = urlParams.get('src');
         if (srcParam) {
@@ -803,7 +2517,7 @@
         AOS.init({ once: true, offset: 50, duration: 800 });
 
         function startCountdown() {
-            // Observer para animación progresiva de números
+            // Observer para animaciÃ³n progresiva de nÃºmeros
             const countUpObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
