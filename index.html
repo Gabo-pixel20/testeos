@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MegaPack Anime - TrÃ¡fico FrÃ­o</title>
+    <title>MegaPack Anime - Tráfico Frío</title>
 
     <!-- PRECARGA RECURSOS CRITICOS -->
     <link rel="preload" as="image"
@@ -32,12 +32,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Space+Grotesk:wght@700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap"
         rel="stylesheet">
     <!-- AOS para animaciones de scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Estilos de Tailwind Compilados -->
+    
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        grotesk: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0f0514',
+                        darkCard: '#1a0d23',
+                        neonPink: '#e8308c',
+                        neonCyan: '#00f0ff',
+                        goldRef: '#ffc61a',
+                        softPurple: '#a78bfa'
+                    },
+                }
+            }
+        }
+    </script>
+
     <style>
+        body {
+            background-color: #0f0514;
+            color: #f3e8f8;
+            overflow-x: hidden;
+        }
+
+        .bg-cyber {
+            background-image: radial-gradient(circle at 10% 20%, rgba(29, 15, 36, 1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(33, 18, 26, 1) 0%, transparent 40%),
+                linear-gradient(to bottom, #0f0514, #14081c);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #00f0ff, #e8308c, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .text-gradient-pink {
+            background: linear-gradient(to right, #e8308c, #ff71b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .neon-shadow {
+            box-shadow: 0 0 40px rgba(232, 48, 140, 0.4);
+        }
+
+        .neon-shadow-cyan {
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+        }
+
+        .pulse-btn {
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+
+        @keyframes pulseGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(232, 48, 140, 0.4);
+                transform: scale(1);
+            }
+
+            50% {
+                box-shadow: 0 0 50px rgba(232, 48, 140, 0.8);
+                transform: scale(1.02);
+            }
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 400px;
+            opacity: 1;
+            padding-bottom: 1.25rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+            color: #e8308c;
+        }
+
+        @keyframes emojiBounce {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-3px) scale(1.1);
+            }
+        }
+
+        .emoji-animate {
+            display: inline-block;
+            animation: emojiBounce 2s ease-in-out infinite;
+        }
+    </style>
+    <style>
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1863,6 +1976,7 @@ body {
   }
 }
 
+    
     </style>
 </head>
 
@@ -1871,34 +1985,34 @@ body {
     <!-- BANNER DE URGENCIA TOP -->
     <div
         class="w-full bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-center py-2 px-4 shadow-[0_4px_15px_rgba(239,68,68,0.5)] z-50 sticky top-0 flex items-center justify-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest">
-        <span class="animate-pulse">âš ï¸</span> ALERTA: EL DESCUENTO Y LOS BONOS DESAPARECEN PRONTO <span
-            class="animate-pulse">âš ï¸</span>
+        <span class="animate-pulse">⚠️</span> ALERTA: EL DESCUENTO Y LOS BONOS DESAPARECEN PRONTO <span
+            class="animate-pulse">⚠️</span>
     </div>
 
-    <!-- SECCIÃ“N 1: GANCHO / HERO (ATENCIÃ“N INTENSA, SIN BOTÃ“N DE COMPRA) -->
+    <!-- SECCIÓN 1: GANCHO / HERO (ATENCIÓN INTENSA, SIN BOTÓN DE COMPRA) -->
     <header class="relative pt-12 pb-20 px-4">
         <div class="max-w-4xl mx-auto text-center z-10 relative">
 
             <div data-aos="fade-down" class="mb-4 inline-block">
                 <span
                     class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold bg-darkCard border border-neonCyan/30 text-neonCyan shadow-[0_0_15px_rgba(0,240,255,0.2)] uppercase tracking-widest">
-                    <span class="animate-pulse">ðŸŸ¢</span> AtenciÃ³n: SublimaciÃ³n & Estampados
+                    <span class="animate-pulse">🟢</span> Atención: Sublimación & Estampados
                 </span>
             </div>
 
             <h1 data-aos="zoom-in" data-aos-delay="100"
                 class="font-grotesk text-4xl md:text-6xl font-black leading-tight mb-6">
-                Lanza Tu PrÃ³xima ColecciÃ³n <br class="hidden md:block" />
-                <span class="text-gradient">MÃS VENDIDA De Anime</span> Hoy Mismo...
+                Lanza Tu Próxima Colección <br class="hidden md:block" />
+                <span class="text-gradient">MÁS VENDIDA De Anime</span> Hoy Mismo...
             </h1>
 
             <p data-aos="fade-up" data-aos-delay="200"
                 class="text-lg md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto font-medium">
                 Sin frustrarte buscando vectores feos, sin sufrir con fondos blancos imposibles de recortar, y <strong
-                    class="text-white">sin tirar meses de trabajo ni miles de dÃ³lares probando herramientas.</strong>
+                    class="text-white">sin tirar meses de trabajo ni miles de dólares probando herramientas.</strong>
             </p>
 
-            <!-- Video Hero de DemostraciÃ³n Emocional -->
+            <!-- Video Hero de Demostración Emocional -->
             <div data-aos="fade-up" data-aos-delay="300"
                 class="relative max-w-2xl mx-auto rounded-2xl overflow-hidden border-2 border-neonPink/40 bg-darkCard neon-shadow aspect-video">
                 <!-- Marca de agua / Badge -->
@@ -1909,7 +2023,7 @@ body {
                     Calidad Real
                 </div>
 
-                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
+                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
                     class="w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity">
                     <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq">
                 </video>
@@ -1917,12 +2031,12 @@ body {
 
             <p data-aos="fade-up" data-aos-delay="400"
                 class="mt-8 text-sm md:text-base text-gray-500 italic max-w-xl mx-auto">
-                "Este es el mismo catÃ¡logo visual que las grandes tiendas de merch a nivel mundial estÃ¡n usando en
+                "Este es el mismo catálogo visual que las grandes tiendas de merch a nivel mundial están usando en
                 secreto para bombardear el mercado."
             </p>
 
             <div class="mt-8 text-white animate-bounce">
-                <p class="text-sm uppercase tracking-widest font-bold text-gray-500 mb-2">Desliza para ver mÃ¡s</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500 mb-2">Desliza para ver más</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="mx-auto lucide lucide-chevron-down">
@@ -1932,11 +2046,11 @@ body {
         </div>
     </header>
 
-    <!-- SECCIÃ“N 2: AGITACIÃ“N DEL PROBLEMA -->
+    <!-- SECCIÓN 2: AGITACIÓN DEL PROBLEMA -->
     <section class="py-20 px-4 bg-darkBg border-y border-neonPink/20">
         <div class="max-w-4xl mx-auto">
             <div data-aos="fade-up" class="text-center mb-12">
-                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseÃ±os
+                <h2 class="font-grotesk text-3xl md:text-5xl font-bold mb-4">La cruda realidad de conseguir diseños
                     brutales <br class="hidden md:block" /> <span class="text-red-500">que vendan.</span></h2>
             </div>
 
@@ -1944,45 +2058,45 @@ body {
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">â³</span>
+                        <span class="text-2xl">⏳</span>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Pierdes Horas Editando</h3>
-                    <p class="text-gray-400 text-sm">Descargas imÃ¡genes "gratuitas" que vienen con fondos horribles.
+                    <p class="text-gray-400 text-sm">Descargas imágenes "gratuitas" que vienen con fondos horribles.
                         Pasas horas borrando fondos y el resultado siempre se ve poco profesional en la prenda.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">ðŸ’¸</span>
+                        <span class="text-2xl">💸</span>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-white">Costos Asfixiantes</h3>
-                    <p class="text-gray-400 text-sm">Contratas diseÃ±adores en Fiverr o Upwork, te cobran $15 o $20
-                        dÃ³lares por UN SOLO DISEÃ‘O y tardan dÃ­as en entregar. Tu margen de ganancia desaparece.</p>
+                    <p class="text-gray-400 text-sm">Contratas diseñadores en Fiverr o Upwork, te cobran $15 o $20
+                        dólares por UN SOLO DISEÑO y tardan días en entregar. Tu margen de ganancia desaparece.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300"
                     class="bg-darkCard p-6 rounded-2xl border border-white/5 hover:border-red-500/50 transition-colors">
                     <div class="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
-                        <span class="text-2xl">ðŸ“‰</span>
+                        <span class="text-2xl">📉</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas AtrÃ¡s</h3>
-                    <p class="text-gray-400 text-sm">Mientras tÃº estÃ¡s varado buscando el diseÃ±o perfecto bajado de
-                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se estÃ¡ llevando a tus
+                    <h3 class="text-xl font-bold mb-2 text-white">Te Quedas Atrás</h3>
+                    <p class="text-gray-400 text-sm">Mientras tú estás varado buscando el diseño perfecto bajado de
+                        Google, tu competencia acaba de lanzar 50 nuevos modelos en su tienda y se está llevando a tus
                         clientes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÃ“N 3: LA REVELACIÃ“N (SOLUCIÃ“N) Y CARRUSEL -->
+    <!-- SECCIÓN 3: LA REVELACIÓN (SOLUCIÓN) Y CARRUSEL -->
     <section class="py-24 px-4 bg-cyber">
         <div class="max-w-5xl mx-auto">
             <div data-aos="zoom-in" class="text-center mb-16">
                 <span
                     class="inline-block px-4 py-1.5 rounded-full text-xs font-bold bg-neonCyan/20 border border-neonCyan text-neonCyan mb-4 uppercase tracking-widest"><span
-                        class="animate-pulse">âœ¨</span> El Atajo Definitivo</span>
+                        class="animate-pulse">✨</span> El Atajo Definitivo</span>
                 <h2 class="font-grotesk text-4xl md:text-5xl font-black mb-6">El <span class="text-gradient">MegaPack
                         Anime +45,000</span> Para Sublimadores</h2>
-                <p class="text-xl text-gray-400 max-w-2xl mx-auto">MÃ¡s de 45,000 diseÃ±os de Anime en alta definiciÃ³n,
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">Más de 45,000 diseños de Anime en alta definición,
                     procesados, curados y <strong
                         class="text-white underline decoration-neonPink drop-shadow-md decoration-4 underline-offset-4">LISTOS
                         PARA VENDER Y LISTOS PARA SUBLIMAR.</strong></p>
@@ -1992,22 +2106,22 @@ body {
             <div data-aos="fade-up"
                 class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden border border-neonPink/30 bg-darkCard shadow-[0_0_50px_rgba(232,48,140,0.15)] p-2">
                 <div id="modern-carousel" class="relative aspect-square rounded-2xl overflow-hidden bg-black">
-                    <!-- ImÃ¡genes -->
+                    <!-- Imágenes -->
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-100 z-10"
-                        alt="DiseÃ±o 1">
+                        alt="Diseño 1">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="DiseÃ±o 2" loading="lazy">
+                        alt="Diseño 2" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8715952.36039764_3.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="DiseÃ±o 3" loading="lazy">
+                        alt="Diseño 3" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d8696551.26482116_4.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="DiseÃ±o 4" loading="lazy">
+                        alt="Diseño 4" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86d4114.34730501_5.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
-                        alt="DiseÃ±o 5" loading="lazy">
+                        alt="Diseño 5" loading="lazy">
 
                     <!-- Controles -->
                     <button onclick="moveCarousel(-1)"
@@ -2036,7 +2150,7 @@ body {
             </div>
 
             <p class="text-center mt-6 text-sm text-gray-500 italic">+45,000 recursos en calidad de estudio.
-                SublimaciÃ³n, DTF, SerigrafÃ­a o Vinilo.</p>
+                Sublimación, DTF, Serigrafía o Vinilo.</p>
         </div>
     </section>
 
@@ -2056,7 +2170,7 @@ body {
                     <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span> Detalle 100% Real
                 </div>
 
-                <video autoplay loop muted playsinline
+                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg"
                     class="w-full h-full object-cover relative z-10 transition-transform duration-700 hover:scale-105">
                     <source
                         src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1777496850/Baki_2mod_abhuia">
@@ -2073,12 +2187,12 @@ body {
                     <span class="text-neonCyan">Listos Para Vender.</span>
                 </h2>
                 <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                    El mayor dolor de cabeza del sublimador moderno es encontrar diseÃ±os ganadores que no salgan
-                    pixelados al momento de pasarlos por la plancha tÃ©rmica o DTF.
+                    El mayor dolor de cabeza del sublimador moderno es encontrar diseños ganadores que no salgan
+                    pixelados al momento de pasarlos por la plancha térmica o DTF.
                 </p>
                 <p class="text-lg text-gray-300 mb-8 leading-relaxed">
                     Con este archivo masivo de <strong
-                        class="text-white text-xl border-b-2 border-neonPink pb-1">+45,000 imÃ¡genes HD</strong>, las
+                        class="text-white text-xl border-b-2 border-neonPink pb-1">+45,000 imágenes HD</strong>, las
                     horas desperdiciadas buscando vectores terminan hoy. Simplemente descargas a tu PC, mandas a
                     imprimir, planchas sobre el producto, empacas y <strong
                         class="text-neonPink uppercase tracking-widest font-bold">empiezas a facturar</strong>.
@@ -2088,17 +2202,17 @@ body {
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-neonCyan/20 flex items-center justify-center text-neonCyan font-bold text-lg">
-                            âœ“</div>
+                            ✓</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Colores que estallan</p>
-                            <p class="text-sm text-gray-400">GarantÃ­a de mÃ¡xima transferencia de tinta en sublimaciÃ³n.
+                            <p class="text-sm text-gray-400">Garantía de máxima transferencia de tinta en sublimación.
                             </p>
                         </div>
                     </li>
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-neonPink/20 flex items-center justify-center text-neonPink font-bold text-lg">
-                            âœ“</div>
+                            ✓</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Cero recortes (Sin Fondos)</p>
                             <p class="text-sm text-gray-400">Formato PNG Transparente puro. No lidias con bordes
@@ -2108,7 +2222,7 @@ body {
                     <li class="flex items-start gap-4">
                         <div
                             class="w-10 h-10 shrink-0 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-lg">
-                            âœ“</div>
+                            ✓</div>
                         <div>
                             <p class="text-white font-bold leading-none mb-1">Universales</p>
                             <p class="text-sm text-gray-400">Compatibles 100% con Illustrator, Photoshop, Corel o
@@ -2120,77 +2234,77 @@ body {
         </div>
     </section>
 
-    <!-- SECCIÃ“N EMOJIS ANIMADOS (CARACTERÃSTICAS) -->
+    <!-- SECCIÓN EMOJIS ANIMADOS (CARACTERÍSTICAS) -->
     <section class="py-16 px-4 bg-cyber">
         <div class="max-w-3xl mx-auto">
             <p data-aos="fade-up"
                 class="text-lg md:text-2xl text-center text-gray-300 font-bold mb-10 max-w-2xl mx-auto">
-                La colecciÃ³n definitiva para impresiÃ³n a pedido, camisetas, sudaderas y mercancÃ­a.
+                La colección definitiva para impresión a pedido, camisetas, sudaderas y mercancía.
                 <strong class="text-neonPink">Uso comercial incluido.</strong>
             </p>
 
             <div class="space-y-4 text-left max-w-xl mx-auto">
                 <div data-aos="fade-up" data-aos-delay="50"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸŽ¨</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🎨</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimaciÃ³n,
-                            DTF, vinilo, serigrafÃ­a y mÃ¡s</p>
-                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER tÃ©cnica de impresiÃ³n, sin importar
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Compatible con sublimación,
+                            DTF, vinilo, serigrafía y más</p>
+                        <p class="text-sm text-gray-400 mt-1">Funciona con CUALQUIER técnica de impresión, sin importar
                             tu equipo.</p>
                     </div>
                 </div>
-                <!-- CaracterÃ­stica 2 -->
+                <!-- Característica 2 -->
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ’Ž</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">💎</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resoluciÃ³n real â€” sin
-                            pÃ­xeles, sin bordes cortados</p>
-                        <p class="text-sm text-gray-400 mt-1">Cada imagen estÃ¡ preparada para impresiÃ³n profesional.
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Alta resolución real — sin
+                            píxeles, sin bordes cortados</p>
+                        <p class="text-sm text-gray-400 mt-1">Cada imagen está preparada para impresión profesional.
                             Calidad que se nota.</p>
                     </div>
                 </div>
-                <!-- CaracterÃ­stica 3 -->
+                <!-- Característica 3 -->
                 <div data-aos="fade-up" data-aos-delay="150"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">âš¡</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">⚡</span>
                     <div>
-                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo â€”
+                        <p class="font-black text-white text-base md:text-lg leading-snug">Listo para usar hoy mismo —
                             sin editar, sin perder tiempo</p>
                         <p class="text-sm text-gray-400 mt-1">+45,000 archivos con fondo transparente. Descarga y
                             empieza a vender.</p>
                     </div>
                 </div>
-                <!-- CaracterÃ­stica 4 -->
+                <!-- Característica 4 -->
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ‘•</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">👕</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Ideal para camisetas, tazas,
                             termos, mochilas, fundas y lo que imagines</p>
-                        <p class="text-sm text-gray-400 mt-1">DiseÃ±os versÃ¡tiles que se adaptan a cualquier producto y
+                        <p class="text-sm text-gray-400 mt-1">Diseños versátiles que se adaptan a cualquier producto y
                             nicho.</p>
                     </div>
                 </div>
-                <!-- CaracterÃ­stica 5 -->
+                <!-- Característica 5 -->
                 <div data-aos="fade-up" data-aos-delay="250"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ•</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🕐</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Ahorra 500+ horas de trabajo
                             con +45,000 personajes organizados</p>
                         <p class="text-sm text-gray-400 mt-1">Todo clasificado, todo al alcance. Directo al grano.</p>
                     </div>
                 </div>
-                <!-- CaracterÃ­stica 6 -->
+                <!-- Característica 6 -->
                 <div data-aos="fade-up" data-aos-delay="300"
                     class="flex items-start gap-4 p-5 rounded-2xl bg-darkCard border border-white/5 hover:border-white/20 transition-all shadow-lg shadow-black/50">
-                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">ðŸ› ï¸</span>
+                    <span class="text-3xl shrink-0 mt-0.5 emoji-animate">🛠️</span>
                     <div>
                         <p class="font-black text-white text-base md:text-lg leading-snug">Formatos editables incluidos
-                            â€” PNG, PSD, PDF, AI y mÃ¡s</p>
-                        <p class="text-sm text-gray-400 mt-1">MÃ¡xima flexibilidad para personalizar cada diseÃ±o a tu
+                            — PNG, PSD, PDF, AI y más</p>
+                        <p class="text-sm text-gray-400 mt-1">Máxima flexibilidad para personalizar cada diseño a tu
                             gusto.</p>
                     </div>
                 </div>
@@ -2198,7 +2312,7 @@ body {
         </div>
     </section>
 
-    <!-- SECCIÃ“N 4: PRUEBA SOCIAL -->
+    <!-- SECCIÓN 4: PRUEBA SOCIAL -->
     <section class="py-20 px-4 bg-darkBg border-y border-white/5">
         <div class="max-w-5xl mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 text-center">
@@ -2215,7 +2329,7 @@ body {
                 <div data-aos="fade-up" data-aos-delay="200">
                     <div class="text-4xl md:text-5xl font-black text-white mb-2"><span class="count-up"
                             data-to="4.9">0.0</span>/5</div>
-                    <div class="text-neonPink font-bold text-sm uppercase tracking-wide">CalificaciÃ³n</div>
+                    <div class="text-neonPink font-bold text-sm uppercase tracking-wide">Calificación</div>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300">
                     <div class="text-4xl md:text-5xl font-black text-white mb-2"><span class="count-up"
@@ -2225,15 +2339,15 @@ body {
             </div>
 
             <h2 data-aos="fade-up" class="font-grotesk text-3xl font-bold text-center mb-10"><span
-                    class="text-2xl">ðŸ’¬</span> Lo que dicen quienes ya estÃ¡n facturando</h2>
+                    class="text-2xl">💬</span> Lo que dicen quienes ya están facturando</h2>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Testimonio 1 -->
                 <div data-aos="fade-up"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"AbrÃ­ mi tienda en Etsy y en la primera semana
-                        ya habÃ­a vendido 12 camisetas. Estos diseÃ±os ahorran horas de Photoshop porque los recortes son
+                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Abrí mi tienda en Etsy y en la primera semana
+                        ya había vendido 12 camisetas. Estos diseños ahorran horas de Photoshop porque los recortes son
                         perfectos."</p>
                     <div class="flex items-center gap-3">
                         <div
@@ -2248,8 +2362,8 @@ body {
                 <!-- Testimonio 2 -->
                 <div data-aos="fade-up" data-aos-delay="100"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Soy diseÃ±adora freelance y este pack me ha
+                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"Soy diseñadora freelance y este pack me ha
                         dado recursos para meses de proyectos. Mis clientes quedan fascinados con la calidad."</p>
                     <div class="flex items-center gap-3">
                         <div
@@ -2264,16 +2378,16 @@ body {
                 <!-- Testimonio 3 -->
                 <div data-aos="fade-up" data-aos-delay="200"
                     class="bg-darkCard p-6 rounded-2xl border border-white/10 hover:border-softPurple/50 transition-colors">
-                    <div class="flex gap-1 mb-4 text-goldRef">â˜…â˜…â˜…â˜…â˜…</div>
-                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"45,000 imÃ¡genes por ese precio es una locura.
-                        Literalmente recuperÃ© lo invertido con la primera taza de anime que vendÃ­. Brutal."</p>
+                    <div class="flex gap-1 mb-4 text-goldRef">★★★★★</div>
+                    <p class="text-gray-300 mb-4 text-sm leading-relaxed">"45,000 imágenes por ese precio es una locura.
+                        Literalmente recuperé lo invertido con la primera taza de anime que vendí. Brutal."</p>
                     <div class="flex items-center gap-3">
                         <div
                             class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center font-bold text-white">
                             A</div>
                         <div>
-                            <p class="text-white font-bold text-sm">AndrÃ©s P.</p>
-                            <p class="text-xs text-gray-500">DueÃ±o de E-Commerce</p>
+                            <p class="text-white font-bold text-sm">Andrés P.</p>
+                            <p class="text-xs text-gray-500">Dueño de E-Commerce</p>
                         </div>
                     </div>
                 </div>
@@ -2281,7 +2395,7 @@ body {
         </div>
     </section>
 
-    <!-- SECCIÃ“N 5: VALUE STACK Y OFERTA (PRIMER BOTÃ“N DE COMPRA) -->
+    <!-- SECCIÓN 5: VALUE STACK Y OFERTA (PRIMER BOTÓN DE COMPRA) -->
     <section class="py-24 px-4 bg-cyber">
         <div class="max-w-3xl mx-auto">
             <div data-aos="zoom-in"
@@ -2289,22 +2403,22 @@ body {
                 <!-- Cinta de urgencia superior -->
                 <div
                     class="absolute top-0 left-0 w-full bg-neonPink text-white text-center py-1.5 text-xs md:text-sm font-black tracking-widest uppercase animate-pulse">
-                    ðŸš¨ Oferta RelÃ¡mpago - Se acaba pronto ðŸš¨
+                    🚨 Oferta Relámpago - Se acaba pronto 🚨
                 </div>
 
                 <div class="text-center mt-6">
                     <h2 class="font-grotesk text-3xl md:text-4xl font-bold mb-8">Lo Que Te Llevas Hoy:</h2>
 
                     <ul class="text-left space-y-4 mb-8 max-w-sm mx-auto">
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
                             +45,000 Vectores y PNGs de Anime</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
-                            Fondos Transparentes (Cero EdiciÃ³n)</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
+                            Fondos Transparentes (Cero Edición)</li>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
                             Licencia Comercial (Totalmente Legal)</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
                             Acceso Inmediato en Google Drive</li>
-                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">âœ“</span>
+                        <li class="flex items-center text-gray-300"><span class="text-neonCyan mr-3 text-xl">✓</span>
                             Actualizaciones Futuras Gratis</li>
                     </ul>
 
@@ -2319,14 +2433,14 @@ body {
                         <p class="text-6xl md:text-8xl font-black text-white flex justify-center items-start">
                             <span class="text-3xl md:text-5xl mt-2 mr-1 text-neonPink">$</span>4.95
                         </p>
-                        <p class="text-neonPink font-bold mt-2">DÃ“LARES AMERICANOS - PAGO ÃšNICO</p>
+                        <p class="text-neonPink font-bold mt-2">DÓLARES AMERICANOS - PAGO ÚNICO</p>
                     </div>
 
                     <a href="https://pay.hotmart.com/S104454776B?off=abs4xoxb&checkoutMode=10" target="_blank"
                         rel="noopener noreferrer" class="block w-full">
                         <button
                             class="pulse-btn w-full py-5 md:py-6 rounded-xl bg-gradient-to-r from-neonPink to-purple-600 hover:from-pink-500 hover:to-purple-500 text-white font-black text-xl md:text-2xl transition-all shadow-[0_10px_20px_rgba(232,48,140,0.3)] hover:shadow-[0_15px_30px_rgba(232,48,140,0.5)] transform hover:-translate-y-1">
-                            Â¡SÃ! QUIERO DESCARGAR TODO AHORA
+                            ¡SÍ! QUIERO DESCARGAR TODO AHORA
                         </button>
                     </a>
 
@@ -2349,18 +2463,18 @@ body {
         </div>
     </section>
 
-    <!-- SECCIÃ“N 6: DESTRUCCIÃ“N DE OBJECIONES (FAQ) -->
+    <!-- SECCIÓN 6: DESTRUCCIÓN DE OBJECIONES (FAQ) -->
     <section class="py-20 px-4 bg-darkBg border-t border-white/5">
         <div class="max-w-3xl mx-auto">
             <h2 data-aos="fade-up" class="font-grotesk text-3xl md:text-4xl font-bold text-center mb-12">Respuestas
-                RÃ¡pidas a Dudas Frecuentes</h2>
+                Rápidas a Dudas Frecuentes</h2>
 
             <div data-aos="fade-up" class="space-y-4">
                 <!-- FAQ 1 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        Â¿Puedo usar estas imÃ¡genes para VENDER productos fÃ­sicos?
+                        ¿Puedo usar estas imágenes para VENDER productos físicos?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -2368,15 +2482,15 @@ body {
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        SÃ­, 100%. Tu compra incluye una Licencia de Uso Comercial. Puedes usarlas en camisetas, tazas,
-                        posters, fundas o cualquier producto que vendas en Shopify, Etsy, Amazon Merch o fÃ­sicamente.
+                        Sí, 100%. Tu compra incluye una Licencia de Uso Comercial. Puedes usarlas en camisetas, tazas,
+                        posters, fundas o cualquier producto que vendas en Shopify, Etsy, Amazon Merch o físicamente.
                     </div>
                 </div>
                 <!-- FAQ 2 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        Â¿Funcionan para tazas, mousepads o solo ropa?
+                        ¿Funcionan para tazas, mousepads o solo ropa?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -2384,8 +2498,8 @@ body {
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        Totalmente versÃ¡tiles. Al ser calidad Ultra HD, puedes redimensionarlos para imprimir en tazas,
-                        gorras, case de celulares, pÃ³sters, mousepads, tapetes, o prendas grandes como sudaderas sin
+                        Totalmente versátiles. Al ser calidad Ultra HD, puedes redimensionarlos para imprimir en tazas,
+                        gorras, case de celulares, pósters, mousepads, tapetes, o prendas grandes como sudaderas sin
                         perder absolutamente nada de nitidez.
                     </div>
                 </div>
@@ -2393,7 +2507,7 @@ body {
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        Â¿Tienen marcas de agua o fondo blanco?
+                        ¿Tienen marcas de agua o fondo blanco?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -2410,7 +2524,7 @@ body {
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        Â¿Se borran o tengo un tiempo lÃ­mite para descargarlos?
+                        ¿Se borran o tengo un tiempo límite para descargarlos?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -2420,14 +2534,14 @@ body {
                     <div class="faq-answer px-5 text-gray-400 text-sm">
                         No se borran NUNCA. Tu acceso a nuestro Drive es VIP y de por vida. No necesitas descargar los
                         30 GB de golpe; puedes entrar cada vez que tengas un pedido y bajar solo la imagen que vas a
-                        sublimar ese dÃ­a.
+                        sublimar ese día.
                     </div>
                 </div>
                 <!-- FAQ 5 -->
                 <div class="faq-item border border-white/10 bg-darkCard rounded-xl overflow-hidden">
                     <button onclick="toggleFaq(this)"
                         class="w-full flex items-center justify-between p-5 text-left font-bold text-white hover:text-neonPink transition-colors">
-                        Â¿Tengo que instalar algÃºn programa o hacer pago mensual?
+                        ¿Tengo que instalar algún programa o hacer pago mensual?
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="faq-icon transition-transform">
@@ -2435,7 +2549,7 @@ body {
                         </svg>
                     </button>
                     <div class="faq-answer px-5 text-gray-400 text-sm">
-                        NO. Es un <strong>Pago Ãšnico sin suscripciones ocultas</strong>. Y no necesitas instalar nada
+                        NO. Es un <strong>Pago Único sin suscripciones ocultas</strong>. Y no necesitas instalar nada
                         raro, accedes desde cualquier navegador mediante un link seguro de Google Drive enviado a tu
                         correo en cuanto Hotmart confirma el pago (normalmente tarda 30 segundos).
                     </div>
@@ -2444,7 +2558,7 @@ body {
         </div>
     </section>
 
-    <!-- SECCIÃ“N 7: URGENCIA FINAL Y FOOTER -->
+    <!-- SECCIÓN 7: URGENCIA FINAL Y FOOTER -->
     <section class="py-16 px-4 bg-black border-t border-neonPink/30 relative overflow-hidden">
         <div class="max-w-2xl mx-auto text-center relative z-10">
             <h2 class="text-3xl font-bold mb-4">Esta Oferta Desaparece En:</h2>
@@ -2463,12 +2577,12 @@ body {
     </section>
 
     <footer class="bg-black py-8 text-center text-xs text-gray-600 border-t border-white/5">
-        <p>Â© 2026 MegaPack Anime (+45,000 DiseÃ±os) â€” Todos los derechos reservados.</p>
+        <p>© 2026 MegaPack Anime (+45,000 Diseños) — Todos los derechos reservados.</p>
         <p class="mt-2 max-w-lg mx-auto">This site is not a part of the Facebook website or Facebook Inc. Additionally,
             This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
     </footer>
 
-    <!-- LÃ“GICA DEL CARRUSEL (No bloqueante) -->
+    <!-- LÓGICA DEL CARRUSEL (No bloqueante) -->
     <script>
         let slideIndex = 0;
         let slideInterval;
@@ -2500,7 +2614,7 @@ body {
         // Iniciar
         if (cSlides.length > 0) startAutoCarousel();
 
-        // ParÃ¡metro src a Hotmart
+        // Parámetro src a Hotmart
         const urlParams = new URLSearchParams(window.location.search);
         const srcParam = urlParams.get('src');
         if (srcParam) {
@@ -2517,7 +2631,7 @@ body {
         AOS.init({ once: true, offset: 50, duration: 800 });
 
         function startCountdown() {
-            // Observer para animaciÃ³n progresiva de nÃºmeros
+            // Observer para animación progresiva de números
             const countUpObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
