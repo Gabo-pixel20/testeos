@@ -16,19 +16,21 @@
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://d1yei2z3i6k35z.cloudfront.net">
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Deferred) -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1406880024051799');
-        fbq('track', 'PageView');
+        setTimeout(function() {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1406880024051799');
+            fbq('track', 'PageView');
+        }, 3000);
     </script>
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1406880024051799&ev=PageView&noscript=1" /></noscript>
@@ -2690,8 +2692,8 @@ body {
             if (!isActive) item.classList.add('active');
         }
 
-        // Lazy load para videos
-        document.addEventListener('DOMContentLoaded', () => {
+        // Lazy load para videos (Deferred until window load)
+        window.addEventListener('load', () => {
             const videoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     const video = entry.target;
