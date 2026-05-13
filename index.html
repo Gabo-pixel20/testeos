@@ -2023,8 +2023,8 @@ body {
                     Calidad Real
                 </div>
 
-                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
-                    class="w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity">
+                <video loop muted playsinline preload="none" poster="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq.jpg"
+                    class="lazy-video w-full h-full object-cover relative z-10 opacity-90 hover:opacity-100 transition-opacity">
                     <source src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/Camisetas3mod_t79kiq">
                 </video>
             </div>
@@ -2109,7 +2109,7 @@ body {
                     <!-- Imágenes -->
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d871a115.91492639_1.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-100 z-10"
-                        alt="Diseño 1">
+                        alt="Diseño 1" loading="lazy">
                     <img src="https://d1yei2z3i6k35z.cloudfront.net/13578013/69cae3d86be2a5.40682413_2.webp"
                         class="c-slide absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 translate-x-full"
                         alt="Diseño 2" loading="lazy">
@@ -2170,8 +2170,8 @@ body {
                     <span class="w-2 h-2 rounded-full bg-neonCyan animate-ping"></span> Detalle 100% Real
                 </div>
 
-                <video autoplay loop muted playsinline poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg"
-                    class="w-full h-full object-cover relative z-10 transition-transform duration-700 hover:scale-105">
+                <video loop muted playsinline preload="none" poster="https://res.cloudinary.com/daijidw3t/video/upload/v1777496850/Baki_2mod_abhuia.jpg"
+                    class="lazy-video w-full h-full object-cover relative z-10 transition-transform duration-700 hover:scale-105">
                     <source
                         src="https://res.cloudinary.com/daijidw3t/video/upload/f_auto,q_auto/v1777496850/Baki_2mod_abhuia">
                 </video>
@@ -2685,6 +2685,24 @@ body {
             document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
             if (!isActive) item.classList.add('active');
         }
+
+        // Lazy load para videos
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const video = entry.target;
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.lazy-video').forEach(video => {
+                videoObserver.observe(video);
+            });
+        });
     </script>
 </body>
 
